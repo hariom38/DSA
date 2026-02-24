@@ -1,1 +1,328 @@
+<!======== html code for creating a book my show with css=======================>
 
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entertainment Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      
+
+
+
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+    padding: 40px 8%;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: white;
+    padding: 15px 8%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+.location {
+    width: 30px;
+}
+
+.nav-links {
+    display: flex;
+    
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: crimson;
+}
+
+.header-icons img {
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ================= ARTISTS ================= */
+.artists {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.artist {
+    text-align: center;
+}
+
+.artist img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.artist p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* ================= MOVIES ================= */
+.movies {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.movie {
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.movie p {
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* ================= PASS ================= */
+.pass {
+    padding: 40px 8%;
+}
+
+.pass img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #1f1d1d;
+    color: white;
+    padding: 30px 8%;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+}
+      
+    </style>
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="header-container">
+
+            <div class="logo-section">
+                <img src="./logo.png" alt="Website Logo" class="logo">
+            </div>
+
+            <div class="location-section">
+                <img src="./location_img.png" alt="Location" class="location">
+            </div>
+
+            <nav class="nav-links">
+                <a href="">For You</a>
+                <a href="">Dining</a>
+                <a href="">Movies</a>
+                <a href="">Events</a>
+                <a href="">Stores</a>
+                <a href="">Activities</a>
+                <a href="">Play</a>
+            </nav>
+
+            <div class="header-icons">
+                <img src="./serch_logo.png" alt="Search Icon">
+                <img src="./profile_img.png" alt="Profile Icon">
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- Artists Section -->
+        <section class="section">
+            <h2 class="section-title">Artists in your District</h2>
+
+            <div class="artists">
+                <div class="artist">
+                    <img src="./artist_img/1.jpg" alt="Artist 1">
+                    <p>Kaka</p>
+                </div>
+
+                <div class="artist">
+                    <img src="./artist_img/2.jpg" alt="Artist 2">
+                    <p>Hariom Dada</p>
+                </div>
+
+                <div class="artist">
+                    <img src="./artist_img/3.png" alt="Artist 3">
+                    <p>Nohul Rathour</p>
+                </div>
+
+                <div class="artist"><img src="./artist_img/5.png" alt=""><p>Devansh</p></div>
+            <div class="artist"><img src="./artist_img/6.jpg" alt=""><p>Anshu Gupta</p></div>
+            <div class="artist"><img src="./artist_img/7.jpg" alt=""><p>Sushant Sharma</p></div>
+            <div class="artist"><img src="./artist_img/8.jpg" alt=""><p>Badsa</p></div>
+            <div class="artist"><img src="./artist_img/9.png" alt=""><p>Sanoop</p></div>
+            <div class="artist"><img src="./artist_img/10.jpg" alt=""><p>Gangendra</p></div>
+            </div>
+        </section>
+
+        <!-- Movies Section -->
+        <section class="section">
+            <h2 class="section-title">Experience in 4DX</h2>
+
+            <div class="movies">
+                <div class="movie">
+                    <img src="./movies/1.jpg" alt="Border">
+                    <p>Border</p>
+                </div>
+
+                <div class="movie">
+                    <img src="./movies/2.jpg" alt="Dhurander">
+                    <p>Dhurander</p>
+                </div>
+
+                <div class="movie">
+                   <img src="./movies/3.jpg" alt="">
+                   <p>Border 2</p>
+                </div>
+                <div class="movie">
+                    <img src="./movies/4.jpg" alt="">
+                    <p>Hit case 3</p>
+                </div>
+                <div class="movie">
+                    <img src="./movies/1.jpg" alt="Border">
+                    <p>Border</p>
+                </div>
+
+                <div class="movie">
+                    <img src="./movies/2.jpg" alt="Dhurander">
+                    <p>Dhurander</p>
+                </div>
+
+                <div class="movie">
+                    <img src="./movies/1.jpg" alt="Border">
+                    <p>Border</p>
+                </div>
+
+                <div class="movie">
+                    <img src="./movies/2.jpg" alt="Dhurander">
+                    <p>Dhurander</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pass Section -->
+        <section class="pass">
+            <img src="./pass/pass.png" alt="Pass Banner">
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-top">
+            <img src="./footer/black_logo.png" alt="Footer Logo">
+
+            <nav class="footer-nav">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">List your events</a>
+            </nav>
+
+            <div class="download">
+                <img src="./footer/bar_code.png" alt="QR Code">
+                <p>Scan to download the app</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>
+                By accessing this page, you confirm that you have read and agreed to our policies.
+                All rights reserved.
+            </p>
+
+            <div class="social-icons">
+                <img src="./footer/watsapp.png" alt="WhatsApp">
+                <img src="./footer/facebook.png" alt="Facebook">
+                <img src="./footer/insta.png" alt="Instagram">
+                <img src="./footer/twiter.png" alt="Twitter">
+                <img src="./footer/yputube.png" alt="YouTube">
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
